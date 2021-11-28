@@ -8,6 +8,12 @@ window.addEventListener('load', function () {
         window.location.reload();
     }
   }
+  // Logo link to Landing Page
+  const logoBrand = document.querySelector('.logo-brand');
+  logoBrand.style.cursor = "pointer";
+  logoBrand.addEventListener('click', () => {
+    location.href = "./landing-page";
+  })
 });
 
 // Mobile Nav
@@ -42,9 +48,4 @@ window.addEventListener('scroll', () => {
 });
 
 
-// Logo link to Landing Page
-const logoBrand = document.querySelector('.logo-brand');
-logoBrand.style.cursor = "pointer";
-logoBrand.addEventListener('click', () => {
-  location.href = "./landing-page";
-})
+
